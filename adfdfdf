@@ -1,0 +1,9 @@
+[33m709fb5d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m demo poc added
+[33m524d916[m phase-4: README, defense patches, docs, demo screenshots, project complete
+[33m9e97e61[m phase-3: rate limiting and account lockout defense implemented
+[33m059fb92[m phase-3: rate limiting and account lockout defense implemented
+[33m5924259[m phase-2-step-3: complete attacker with argparse, 429 handling, warning banner, colorama
+[33m20785db[m phase-2-step-2 wordlist loop working, correct password detected
+[33m1a0b76b[m phase-2-step-1: single request proof of concept working
+[33m63ddeb7[m phase-1: add project folder structure
+[33mf29949d[m phase-1: project scaffold and target app documented
